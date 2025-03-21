@@ -1,0 +1,35 @@
+<!-- todo_app/templates/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            display: flex;
+        }
+        .sidebar {
+            width: 15%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .content {
+            width: 85%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="{% url 'profile' %}">Profile</a><br>
+        <a href="{% url 'todo_list' %}">To-Do List</a><br>
+        <a href="{% url 'about' %}">About</a>
+    </div>
+    <div class="content">
+        <h1>Welcome to the To-Do Application</h1>
+        <p>This is your dashboard.</p>
+    </div>
+</body>
+</html>
